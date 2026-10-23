@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panteha Behboodi, PhD — Publications</title>
+<meta name="description" content="Publications, manuscripts, and conference presentations of Panteha Behboodi, PhD.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f4e5f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23ffffff' text-anchor='middle'%3EPB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfbf9;
+    --surface: #ffffff;
+    --ink: #1b1f23;
+    --ink-soft: #4a525a;
+    --ink-faint: #6b737b;
+    --rule: #e3e5e3;
+    --accent: #1f4e5f;
+    --accent-soft: #e8f0f2;
+    --accent-ink: #ffffff;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121619;
+      --surface: #181d21;
+      --ink: #e8eaec;
+      --ink-soft: #b4bcc3;
+      --ink-faint: #8d969e;
+      --rule: #2a3137;
+      --accent: #8cc3d4;
+      --accent-soft: #1d2c33;
+      --accent-ink: #0e1316;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121619;
+    --surface: #181d21;
+    --ink: #e8eaec;
+    --ink-soft: #b4bcc3;
+    --ink-faint: #8d969e;
+    --rule: #2a3137;
+    --accent: #8cc3d4;
+    --accent-soft: #1d2c33;
+    --accent-ink: #0e1316;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+  .page { max-width: 820px; margin: 0 auto; padding: 56px 24px 72px; }
+
+  /* Header */
+  .eyebrow {
+    margin: 0 0 10px;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h1 {
+    margin: 0;
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(32px, 6vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -.01em;
+  }
+  .role { margin: 14px 0 0; color: var(--ink-soft); font-size: 16.5px; }
+  .focus { margin: 6px 0 0; color: var(--ink-soft); }
+  .contact {
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+    margin: 16px 0 0; padding: 0; list-style: none; font-size: 15px;
+  }
+
+  .stats {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+    margin: 32px 0 0; padding: 0; list-style: none;
+  }
+  .stats a {
+    display: block; height: 100%;
+    padding: 14px 14px 12px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    color: var(--ink); text-decoration: none;
+    transition: border-color .15s;
+  }
+  .stats a:hover { border-color: var(--accent); }
+  .stats strong {
+    display: block;
+    font-family: var(--serif); font-weight: 600; font-size: 28px; line-height: 1.1;
+    color: var(--accent);
+  }
+  .stats span { font-size: 13px; color: var(--ink-soft); }
+
+  /* Sections */
+  section { margin-top: 52px; scroll-margin-top: 20px; }
+  h2 {
+    display: flex; align-items: baseline; gap: 10px;
+    margin: 0 0 6px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+    font-family: var(--serif); font-weight: 600; font-size: 23px;
+  }
+  h2 .count { font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--ink-faint); }
+  .section-note { margin: 10px 0 0; font-size: 13.5px; color: var(--ink-faint); }
+
+  .list { margin: 0; padding: 0; list-style: none; }
+  .item { padding: 20px 0; border-bottom: 1px solid var(--rule); }
+  .item:last-child { border-bottom: 0; }
+  .item h3 {
+    margin: 0;
+    font-family: var(--serif); font-weight: 600; font-size: 18.5px; line-height: 1.4;
+  }
+  .item h3 a { color: var(--ink); text-decoration-color: var(--rule); }
+  .item h3 a:hover { color: var(--accent); text-decoration-color: currentColor; }
+  .authors { margin: 6px 0 0; font-size: 14.5px; color: var(--ink-soft); }
+  .authors b { color: var(--ink); font-weight: 600; }
+  .venue { margin: 4px 0 0; font-size: 14.5px; color: var(--ink-soft); }
+  .venue em { color: var(--ink); }
+  .doi { color: var(--ink-faint); overflow-wrap: anywhere; }
+  .tag {
+    display: inline-block; margin-left: 4px; padding: 1px 8px;
+    border-radius: 999px; background: var(--accent-soft); color: var(--accent);
+    font-size: 12px; font-weight: 600; vertical-align: 1px;
+  }
+  .actions { margin: 10px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 6px 12px;
+    border: 1px solid var(--accent); border-radius: 7px;
+    font-size: 13.5px; font-weight: 500; text-decoration: none;
+    transition: background .15s, color .15s;
+  }
+  .btn:hover { background: var(--accent); color: var(--accent-ink); }
+  .btn svg { width: 12px; height: 12px; }
+
+  footer {
+    margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule);
+    font-size: 13px; color: var(--ink-faint);
+  }
+
+  @media (max-width: 600px) {
+    .page { padding: 36px 16px 56px; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .item h3 { font-size: 17.5px; }
+  }
+
+  @media print {
+    :root { --bg: #fff; --surface: #fff; --ink: #000; --ink-soft: #333; --ink-faint: #555; --rule: #ccc; --accent: #1f4e5f; }
+    .page { padding: 0; max-width: none; }
+    .stats, .actions { display: none; }
+    section { margin-top: 28px; }
+    .item { padding: 10px 0; break-inside: avoid; }
+    .item h3 a { text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header>
+    <p class="eyebrow">Publications &amp; Presentations</p>
+    <h1>Panteha Behboodi, PhD</h1>
+    <p class="role">Postdoctoral Fellow, Genetics and Epigenetics<br>Center for Discovery and Innovation, Hackensack Meridian Health</p>
+    <p class="focus">Multiple myeloma biology &middot; tumor&ndash;microenvironment interactions &middot; multi-omic biomarker discovery</p>
+    <ul class="contact">
+      <li><a href="mailto:panteabehboodi1994@gmail.com">panteabehboodi1994@gmail.com</a></li>
+      <li><a href="https://scholar.google.com/citations?user=2huU-koAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile</a></li>
+    </ul>
+
+    <ul class="stats" aria-label="Summary">
+      <li><a href="#peer-reviewed"><strong>5</strong><span>Peer-reviewed</span></a></li>
+      <li><a href="#under-review"><strong>1</strong><span>Under review</span></a></li>
+      <li><a href="#in-preparation"><strong>3</strong><span>In preparation</span></a></li>
+      <li><a href="#presentations"><strong>8</strong><span>Presentations</span></a></li>
+    </ul>
+  </header>
+
+  <!-- PEER-REVIEWED -->
+  <section id="peer-reviewed" aria-labelledby="h-peer">
+    <h2 id="h-peer">Peer-Reviewed Publications <span class="count">5</span></h2>
+    <ol class="list">
+      <li class="item">
+        <h3><a href="https://doi.org/10.1177/11769351241277012" target="_blank" rel="noopener">Downregulation of LPAR1 Promotes Invasive Behavior in Papillary Thyroid Carcinoma Cells</a></h3>
+        <p class="authors">Bokaii Hosseini Z, Rajabi F, Morovatshoar R, Ashrafpour M, <b>Behboodi P</b>, et al.</p>
+        <p class="venue"><em>Cancer Informatics</em>, 2024 &middot; <span class="doi">doi:10.1177/11769351241277012</span></p>
+        <p class="actions"><a class="btn" href="https://doi.org/10.1177/11769351241277012" target="_blank" rel="noopener">Read paper <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 2 10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+      </li>
+      <li class="item">
+        <h3><a href="https://doi.org/10.47611/jsr.v13i3.2645" target="_blank" rel="noopener">Assessing Natural Killer Cell Cytotoxicity Against Multiple Myeloma Cells with IL-6 and sIL-6R</a></h3>
+        <p class="authors">Aziz M, <b>Behboodi P</b>, Lee W.</p>
+        <p class="venue"><em>Journal of Student Research</em>, 2024 &middot; <span class="doi">doi:10.47611/jsr.v13i3.2645</span></p>
+        <p class="actions"><a class="btn" href="https://doi.org/10.47611/jsr.v13i3.2645" target="_blank" rel="noopener">Read paper <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 2 10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+      </li>
+      <li class="item">
+        <h3><a href="https://doi.org/10.1016/j.heliyon.2024.e33847" target="_blank" rel="noopener">Enhanced Mechanical Properties and Biocompatibility of Hydroxyapatite Scaffolds by Magnesium and Titanium Oxides for Bone Tissue Applications</a></h3>
+        <p class="authors">Arab M, <b>Behboodi P</b>, et al.</p>
+        <p class="venue"><em>Heliyon</em>, 2024 &middot; <span class="doi">doi:10.1016/j.heliyon.2024.e33847</span></p>
+        <p class="actions"><a class="btn" href="https://doi.org/10.1016/j.heliyon.2024.e33847" target="_blank" rel="noopener">Read paper <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 2 10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+      </li>
+      <li class="item">
+        <h3><a href="https://doi.org/10.1007/978-3-031-22802-5_8" target="_blank" rel="noopener">Engineering Approaches in Ovarian Cancer Cell Culture</a></h3>
+        <p class="authors">Iwanicki M, Pavlovi&#269; T, <b>Behboodi P</b>.</p>
+        <p class="venue">In <em>Engineering and Physical Approaches to Cancer</em>, Current Cancer Research. Springer, Cham, 2023 <span class="tag">Book chapter</span><br><span class="doi">doi:10.1007/978-3-031-22802-5_8</span></p>
+        <p class="actions"><a class="btn" href="https://doi.org/10.1007/978-3-031-22802-5_8" target="_blank" rel="noopener">Read chapter <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 2 10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+      </li>
+      <li class="item">
+        <h3><a href="https://doi.org/10.1002/adbi.202200197" target="_blank" rel="noopener">Extracellular Matrix Modulates Outgrowth Dynamics in Ovarian Cancer</a></h3>
+        <p class="authors">Alshehri S, Pavlovi&#269; T, Farsinejad S, <b>Behboodi P</b>, et al.</p>
+        <p class="venue"><em>Advanced Biology</em>, 2022 &middot; <span class="doi">doi:10.1002/adbi.202200197</span></p>
+        <p class="actions"><a class="btn" href="https://doi.org/10.1002/adbi.202200197" target="_blank" rel="noopener">Read paper <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 2 10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- UNDER REVIEW -->
+  <section id="under-review" aria-labelledby="h-review">
+    <h2 id="h-review">Under Review <span class="count">1</span></h2>
+    <ul class="list">
+      <li class="item">
+        <h3>Activation of the MIF&ndash;CD74&ndash;AKT Pathway by Endothelial Cells Promotes Myeloma Growth and Limits NK Cell&ndash;Mediated Killing</h3>
+        <p class="authors">Samimi S&#42;, <b>Behboodi P&#42;</b>, Bariana M, Varkey A, Cassella E, Anuncio SA, Arun A, Siegel DS, Salas M, Castano A, Tycko B, Lee WY, Zakrzewski JL.</p>
+        <p class="venue">Submitted to <em>HemaSphere</em>, 2026 <span class="tag">Co-first author</span></p>
+        <p class="actions"><a class="btn" href="mailto:panteabehboodi1994@gmail.com?subject=Draft%20request%3A%20MIF-CD74-AKT%20endothelial%20cells%20in%20myeloma">Request draft</a></p>
+      </li>
+    </ul>
+    <p class="section-note">&#42; Co-first authors.</p>
+  </section>
+
+  <!-- IN PREPARATION -->
+  <section id="in-preparation" aria-labelledby="h-prep">
+    <h2 id="h-prep">Manuscripts in Preparation <span class="count">3</span></h2>
+    <ul class="list">
+      <li class="item">
+        <h3>Osteoblast&ndash;Myeloma Crosstalk Drives Trophic Interferon Pathway Signaling and Chemokines in Multiple Myeloma</h3>
+        <p class="authors"><b>Behboodi P&#42;</b>, Samimi S&#42;, Castano A, Colorado I, Rigo M, Salas M, Tariq M, Feinman R, Zakrzewski JL, Lee W, Tycko B.</p>
+        <p class="venue">Ready for submission <span class="tag">Co-first author</span></p>
+        <p class="actions"><a class="btn" href="mailto:panteabehboodi1994@gmail.com?subject=Draft%20request%3A%20Osteoblast-myeloma%20crosstalk">Request draft</a></p>
+      </li>
+      <li class="item">
+        <h3>Mechanisms and Biological Roles of Allele-Specific DNA Methylation in Multiple Myeloma</h3>
+        <p class="authors"><b>Behboodi P</b>, Alberca Doto C, Madrid A, Castano A, Salas M, Tariq M, Cummins A, Zhou A, Sarkar R, Kobbe R, Di Palma Grisi J, Hillengass J, Slade M, Parekh S, Lagana A, Biran N, Chow K, Siegel D, Feinman R, Sucheston-Campbell L, Tycko B.</p>
+        <p class="venue">In preparation &middot; Selected for an invited talk at the ASH Annual Meeting, December 2026 <span class="tag">First author</span></p>
+        <p class="actions"><a class="btn" href="mailto:panteabehboodi1994@gmail.com?subject=Draft%20request%3A%20Allele-specific%20methylation%20in%20MM">Request draft</a></p>
+      </li>
+      <li class="item">
+        <h3>Chronic Low-Dose PFOS Exposure Alters the Transcriptome and DNA Methylome of Human Fallopian Tube Epithelial Cells</h3>
+        <p class="authors"><b>Behboodi P</b>, Heduvor P, Pavlovi&#269; T, Salas M, Sarkar D, Tycko B, Iwanicki M.</p>
+        <p class="venue">Ready for submission <span class="tag">First author</span></p>
+        <p class="actions"><a class="btn" href="mailto:panteabehboodi1994@gmail.com?subject=Draft%20request%3A%20PFOS%20fallopian%20tube%20epithelial%20cells">Request draft</a></p>
+      </li>
+    </ul>
+    <p class="section-note">&#42; Co-first authors.</p>
+  </section>
+
+  <!-- PRESENTATIONS -->
+  <section id="presentations" aria-labelledby="h-pres">
+    <h2 id="h-pres">Conference Presentations <span class="count">8</span></h2>
+    <ul class="list">
+      <li class="item">
+        <h3>Mechanisms and Biological Roles of Allele-Specific DNA Methylation in Multiple Myeloma</h3>
+        <p class="venue">American Society of Hematology (ASH) Annual Meeting, New Orleans, LA &middot; December 2026 <span class="tag">Invited talk</span></p>
+      </li>
+      <li class="item">
+        <h3><a href="https://www.asco.org/abstracts-presentations/262455" target="_blank" rel="noopener">MACROD2 and CDKN2A in Multiple Myeloma: Insights to Germline Susceptibility and Cytogenetic Risk from Long-Read Nanopore Sequencing</a></h3>
+        <p class="venue">American Society of Clinical Oncology (ASCO) Annual Meeting, Chicago, IL &middot; May 2026</p>
+        <p class="actions"><a class="btn" href="https://www.asco.org/abstracts-presentations/262455" target="_blank" rel="noopener">View abstract <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 2 10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+      </li>
+      <li class="item">
+        <h3>Effects of PFAS on DNA Methylation at Human Cancer Susceptibility Loci</h3>
+        <p class="venue">American Society of Human Genetics (ASHG) Annual Meeting, Boston, MA &middot; October 2025</p>
+      </li>
+      <li class="item">
+        <h3><a href="https://doi.org/10.1158/1538-7445.AM2025-5237" target="_blank" rel="noopener">Optimizing Multiple Myeloma Treatment Approaches by Elucidating Tumor&ndash;Stroma Interactions in the Bone Marrow Microenvironment</a></h3>
+        <p class="venue">American Association for Cancer Research (AACR) Annual Meeting, Chicago, IL &middot; April 2025 &middot; PhD thesis project</p>
+        <p class="actions"><a class="btn" href="https://doi.org/10.1158/1538-7445.AM2025-5237" target="_blank" rel="noopener">View abstract <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 2 10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+      </li>
+      <li class="item">
+        <h3>Optimizing Multiple Myeloma Treatment</h3>
+        <p class="venue">Johnson &amp; Johnson Engineering Showcase, New Brunswick, NJ &middot; April 2025 <span class="tag">Poster</span></p>
+      </li>
+      <li class="item">
+        <h3>Allele-Specific Methylation Mapping and CRISPR Mutagenesis Identify Functional Chromatin-Regulating SNPs (rSNPs) in Disease Risk Loci</h3>
+        <p class="venue">Genetics and Epigenomics Research Conference, Center for Discovery and Innovation, Hackensack Meridian Health &middot; 2024</p>
+      </li>
+      <li class="item">
+        <h3>Development of Human Systems for Genetic Disease Modeling, Drug Development and New Biology</h3>
+        <p class="venue">Human Systems, VelociGene, Regeneron Pharmaceuticals, Tarrytown, NY &middot; 2023</p>
+      </li>
+      <li class="item">
+        <h3><a href="https://www.proquest.com/openview/ee0d293ffc2c93ebaf424b2d7efd7583/1?pq-origsite=gscholar&amp;cbl=5161120" target="_blank" rel="noopener">Extracellular Matrix Modulates Outgrowth Dynamics in Ovarian Cancer</a></h3>
+        <p class="venue">48th Annual Northeast Bioengineering Conference, Columbia University, New York, NY &middot; 2022</p>
+        <p class="actions"><a class="btn" href="https://www.proquest.com/openview/ee0d293ffc2c93ebaf424b2d7efd7583/1?pq-origsite=gscholar&amp;cbl=5161120" target="_blank" rel="noopener">View abstract <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 2 10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    Updated October 2026 &middot; Full citation record on <a href="https://scholar.google.com/citations?user=2huU-koAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+  </footer>
+
+</main>
+</body>
+</html>
